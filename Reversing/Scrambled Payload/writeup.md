@@ -1,13 +1,16 @@
-# Writeup: Scrambled VBS & Regex Logic Challenge
+# ** Scrambled Payload
 
 **Category:** Reverse Engineering / Malware Analysis
-**Difficulty:** Medium
+**Difficulty:** Very Easy
 **Tags:** `VBScript`, `Deobfuscation`, `Regex`, `Math`, `Python Scripting`
 
 ---
 
+#  Description
+*During a recent malware campaign multiple of our machines were hit. We were able to recover the final payload which seems to do nothing, maybe it is targeting a specific device?*
+
 ## 1. Introduction
-The challenge begins with a heavily obfuscated VBScript (`.vbs`) file. The code is unreadable at first glance, utilizing string manipulation and integer arrays to hide its true intent. The goal of this challenge is to analyze the script's behavior and recover the hidden "Flag" (or the secret condition) without executing the potentially malicious code.
+The challenge begins with a heavily obfuscated VBScript (`.vbs`) file named `payload.vbs`. The code is unreadable at first glance, utilizing string manipulation and integer arrays to hide its true intent. The goal of this challenge is to analyze the script's behavior and recover the hidden "Flag" (or the secret condition) without executing the potentially malicious code.
 
 ## 2. Stage 1: The Loader (Initial Deobfuscation)
 In the initial stage, the script employs the `Chr()` function and modulus operations to dynamically construct object names.
@@ -123,7 +126,7 @@ The clean code revealed that the script:
 
 ## 4. Stage 3: The Logic (Regex Intersection)
 
-After deobfuscate the payload, we got a obfuscated payload again with the same method with the first payload.
+After deobfuscate the payload, i got a obfuscated payload again with the same method with the first payload.
 ```
 Set b=CreateObject(Chr((201*185)mod 256)&Chr((228*153)mod 256)&Chr((217*103)mod 256)&Chr((44*83)mod 256)&Chr((82*57)mod 256)&Chr((18*31)mod 256)&Chr((185*107)mod 256)&Chr((44*183)mod 256)&Chr((214*107)mod 256)&Chr((103*83)mod 256)&Chr(97)&Chr((47*35)mod 256)):b.Type=2
 b.CharSet=Chr((155*47)mod 256)&Chr((135*181)mod 256)&Chr((179*159)mod 256)&Chr((209*145)mod 256)&Chr((185*139)mod 256)&Chr((109*15)mod 256)&Chr((59*171)mod 256)&Chr(105)
