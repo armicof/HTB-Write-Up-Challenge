@@ -1,4 +1,4 @@
-# ** Graverobber
+# Graverobber
 
 **Category:** Reverse Engineering 
 **Difficulty:** Very Easy

@@ -1,4 +1,4 @@
-# ** Scrambled Payload
+# Scrambled Payload
 
 **Category:** Reverse Engineering / Malware Analysis
 **Difficulty:** Very Easy
