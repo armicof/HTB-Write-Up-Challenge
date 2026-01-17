@@ -1,7 +1,9 @@
 # Graverobber
 
 **Category:** Reverse Engineering 
+
 **Difficulty:** Very Easy
+
 **Tags:** `Static Analysis`, `Ghidra`, `Python Scripting`
 
 ---

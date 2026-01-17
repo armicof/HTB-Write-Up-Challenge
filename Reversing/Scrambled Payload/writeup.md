@@ -1,7 +1,9 @@
 # Scrambled Payload
 
 **Category:** Reverse Engineering / Malware Analysis
+
 **Difficulty:** Very Easy
+
 **Tags:** `VBScript`, `Deobfuscation`, `Regex`, `Math`, `Python Scripting`
 
 ---
